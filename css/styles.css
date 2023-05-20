@@ -147,13 +147,11 @@ button {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-
-  transition: color var(--transition-duration-and-func);
 }
 .current {
   color: var(--pressed-state);
   position: relative;
-  transition: background-color var(--transition-duration-and-func);
+  transition: color var(--transition-duration-and-func);
 }
 .current::after {
   content: '';
