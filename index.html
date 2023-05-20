@@ -17,10 +17,10 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="page">
+  <body class="body">
     <!-- Шапка сайта -->
     <header class="main-header">
-      <div class="container flex">
+      <div class="container flex header-fixed">
         <nav class="page-nav">
           <a class="link logo" href="./index.html">Web<span class="main-logo">Studio</span></a>
           <ul class="menu list">
@@ -28,10 +28,10 @@
               <a class="menu-link current link list" href="./index.html">Studio</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link list" href="./portfolio.html">Portfolio</a>
+              <a class="menu-link current link list" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link list" href="">Contacts</a>
+              <a class="menu-link current link list" href="">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -53,7 +53,7 @@
       <section class="main">
         <div class="hero container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
+          <button class="button" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- Особенности. Вложенный списк -->
@@ -402,5 +402,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
