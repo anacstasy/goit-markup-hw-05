@@ -152,8 +152,10 @@ button {
 }
 .current {
   position: relative;
+  transition: background-color var(--transition-duration-and-func);
 }
-.current:hover::after {
+.current:hover::after,
+.current:focus::after {
   content: '';
   width: 100%;
   height: 4px;
